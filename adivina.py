@@ -8,10 +8,11 @@ fecha= datetime.date.today()
 print(f"Bienvenida \n {fecha}")
 
 def esperar (espera):
-    t.sleep(1)
-    for i in range(espera):
+    while(espera >= 0 ):
         os.system("cls || clear ")
-        print(f"Espera {i}")
+        print(f"Espera {espera}")
+        espera-=1
+        t.sleep(1)
     os.system("cls || clear ")
 
 def adivinar (num_user, num_rdn):
